@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Calculators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Calculators</h1>
+
+    <div id="calculator1" class="calculator">
+        <h2>Battery Capacity Calculator</h2>
+        <input type="number" id="voltage" placeholder="Voltage (V)">
+        <input type="number" id="ampHours" placeholder="Amp-Hours (Ah)">
+        <button onclick="calculateBatteryCapacity()">Calculate</button>
+        <p id="result1"></p>
+    </div>
+
+    <div id="calculator2" class="calculator">
+        <h2>Solar Panel Wattage Calculator</h2>
+        <input type="number" id="solarVoltage" placeholder="Voltage (V)">
+        <input type="number" id="solarCurrent" placeholder="Current (A)">
+        <button onclick="calculateSolarWattage()">Calculate</button>
+        <p id="result2"></p>
+    </div>
+
+    <script src="calculators.js"></script>
+</body>
+</html>
